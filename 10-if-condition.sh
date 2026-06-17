@@ -2,8 +2,6 @@
 
 Number=$1
 
-echo ("Enter the number")
-
 if [%Number -lt 10] then
     echo "Number is less than 10"
 
