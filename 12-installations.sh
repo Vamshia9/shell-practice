@@ -1,15 +1,9 @@
 #!/bin/bash
 
-USERID=$((id -u))
-
-if [ $(USERID) -ne 0 ]; then
-    echo "ERROR:: Please run this script with root privelege"
-fi
-
-dnf install mysql -y
-
-if [ $? -ne 0 ]; then
-    echo "ERROR:: Installing MySQL is failure"
+# Check the Effective User ID (EUID)
+if [ "$EUID" -ne 0 ]; then
+    echo "You are NOT running this script as root/sudo."
+    exit 1
 else
-    echo "Installing MySQL is SUCCESS"
+    echo "Success: You ARE running this script as root/sudo."
 fi
