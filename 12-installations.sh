@@ -1,6 +1,5 @@
 #!/bin/bash
 
-
 dnf install mysql -y
 
 if [ $? -ne 0 ]; then
