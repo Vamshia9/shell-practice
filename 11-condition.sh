@@ -1,4 +1,4 @@
-#!/bin/bash
++cv \mbn  #!/bin/bash
  echo "Please enter the Number"
 
  read Number
