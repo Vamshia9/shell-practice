@@ -1,8 +1,8 @@
 #!/bin/bash
 
-USERID=$(id -u)
+#USERID=$(id -u)
 
-if [ $USERID -ne 0 ]; then
+if [ uid -ne 0 ]; then
 
 echo "ERROR : Please run the installation with root priveleges"
 
@@ -16,6 +16,6 @@ echo "Installation is failure"
 
 else
 
-echo "I stallation is success"
+echo "Installation is success"
 
 if
