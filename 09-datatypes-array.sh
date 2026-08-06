@@ -2,4 +2,4 @@
 
 leaders=("koppolu" "vamshi" "krishna")
 
-echo "All names : ${Names[@]}"
+echo "All names : ${leaders[@]}"
